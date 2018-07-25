@@ -40,11 +40,10 @@ GEM
     multi_json (1.7.6)
     multi_xml (0.5.4)
     mysql2 (0.3.11)
-    rack (1.5.2)
+    rack (1.5.5)
     rack-accept (0.4.5)
       rack (>= 0.4)
-    rack-cors (0.2.8)
-      rack
+    rack-cors (1.0.2)
     rack-mount (0.8.3)
       rack (>= 1.0.0)
     rack-test (0.6.2)
@@ -84,9 +83,12 @@ DEPENDENCIES
   json (~> 1.7.7)
   mysql2 (~> 0.3.11)
   rack (~> 1.5.2)
-  rack-cors
+  rack-cors (>= 0.4.1)
   rack-test
   rake (~> 10.0.4)
   rspec
   schema_plus (~> 0.4.1)
   shotgun
+
+BUNDLED WITH
+   1.16.3
