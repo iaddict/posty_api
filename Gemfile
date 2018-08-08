@@ -3,10 +3,10 @@ source 'http://rubygems.org'
 group :default do
   gem 'rack', "~> 1.5.2"
   gem 'rake', "~> 10.0.4"
-  gem 'grape', "~> 0.4.1"
+  gem 'grape', '~> 1.1.0'
   gem 'activerecord', "~> 3.2.13", :require => "active_record"
   gem 'json', '~> 1.7.7'
-  gem 'grape-swagger'
+  gem 'grape-swagger', '>= 0.5.0'
   gem 'rack-cors', :require => 'rack/cors'
   gem 'mysql2', "~> 0.3.11"
   gem "schema_plus", "~> 0.4.1"
