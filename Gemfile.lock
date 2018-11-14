@@ -4,22 +4,31 @@ GEM
     actionmailer (0.6.1)
       actionpack (>= 0.9.5)
     actionpack (1.4.0)
-    activemodel (3.2.13)
-      activesupport (= 3.2.13)
+    activemodel (3.2.22.5)
+      activesupport (= 3.2.22.5)
       builder (~> 3.0.0)
-    activerecord (3.2.13)
-      activemodel (= 3.2.13)
-      activesupport (= 3.2.13)
+    activerecord (3.2.22.5)
+      activemodel (= 3.2.22.5)
+      activesupport (= 3.2.22.5)
       arel (~> 3.0.2)
       tzinfo (~> 0.3.29)
-    activesupport (3.2.13)
-      i18n (= 0.6.1)
+    activesupport (3.2.22.5)
+      i18n (~> 0.6, >= 0.6.4)
       multi_json (~> 1.0)
-    arel (3.0.2)
-    backports (3.3.1)
+    arel (3.0.3)
+    awesome_print (1.8.0)
+    axiom-types (0.1.1)
+      descendants_tracker (~> 0.0.4)
+      ice_nine (~> 0.11.0)
+      thread_safe (~> 0.3, >= 0.3.1)
     builder (3.0.4)
-    descendants_tracker (0.0.1)
+    coercible (1.0.0)
+      descendants_tracker (~> 0.0.1)
+    concurrent-ruby (1.1.3)
+    descendants_tracker (0.0.4)
+      thread_safe (~> 0.3, >= 0.3.1)
     diff-lcs (1.2.4)
+    equalizer (0.0.11)
     grape (0.4.1)
       activesupport
       builder
@@ -30,17 +39,22 @@ GEM
       rack-accept
       rack-mount
       virtus
-    grape-swagger (0.5.0)
-      grape (>= 0.2.0)
-      kramdown
-    hashie (2.0.5)
-    i18n (0.6.1)
+    grape-entity (0.6.0)
+      activesupport
+      multi_json (>= 1.3.2)
+    grape-swagger (0.20.0)
+      awesome_print
+      grape
+      grape-entity
+    hashie (3.6.0)
+    i18n (0.9.5)
+      concurrent-ruby (~> 1.0)
+    ice_nine (0.11.2)
     json (1.7.7)
-    kramdown (1.0.2)
-    multi_json (1.7.6)
-    multi_xml (0.5.4)
+    multi_json (1.13.1)
+    multi_xml (0.6.0)
     mysql2 (0.3.11)
-    rack (1.5.2)
+    rack (1.5.5)
     rack-accept (0.4.5)
       rack (>= 0.4)
     rack-cors (0.2.8)
@@ -68,19 +82,22 @@ GEM
       valuable
     shotgun (0.9)
       rack (>= 1.0)
-    tzinfo (0.3.37)
-    valuable (0.9.8)
-    virtus (0.5.5)
-      backports (~> 3.3)
-      descendants_tracker (~> 0.0.1)
+    thread_safe (0.3.6)
+    tzinfo (0.3.55)
+    valuable (0.9.14)
+    virtus (1.0.5)
+      axiom-types (~> 0.1)
+      coercible (~> 1.0)
+      descendants_tracker (~> 0.0, >= 0.0.3)
+      equalizer (~> 0.0, >= 0.0.9)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  activerecord (~> 3.2.13)
+  activerecord (~> 3.2.14)
   grape (~> 0.4.1)
-  grape-swagger
+  grape-swagger (>= 0.5.0)
   json (~> 1.7.7)
   mysql2 (~> 0.3.11)
   rack (~> 1.5.2)
@@ -90,3 +107,6 @@ DEPENDENCIES
   rspec
   schema_plus (~> 0.4.1)
   shotgun
+
+BUNDLED WITH
+   1.16.6
