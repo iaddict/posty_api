@@ -4,7 +4,7 @@ group :default do
   gem 'rack', "~> 1.5.2"
   gem 'rake', "~> 10.0.4"
   gem 'grape', "~> 0.4.1"
-  gem 'activerecord', "~> 3.2.13", :require => "active_record"
+  gem 'activerecord', '~> 4.0.3'
   gem 'json', '~> 1.7.7'
   gem 'grape-swagger'
   gem 'rack-cors', :require => 'rack/cors'
